@@ -17,28 +17,27 @@ body {
 	padding: 0;
 	display: flex;
 
-}
+	.container1 {
+		display: block;
+		width: 100%;
+		margin: 0 5%;
 
-.container1 {
-	display: block;
-	width: 100%;
-	margin: 0 5%;
-}
-
-.container2 {
-	display: block;
-	width: 100%;
-	margin: 0 5%;
-}
-
-
-#box1 {
-	display: block;
-	border: 2px solid red;
-	width: 100%;
-	height: auto;
+		#box1 {
+			display: block;
+			border: 2px solid red;
+			width: 100%;
+			height: auto;
 	
+		}
+	}
 }
+
+
+
+
+
+
+
 
 img {
 	width: 100%;
