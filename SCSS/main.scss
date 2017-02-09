@@ -1,5 +1,8 @@
+$black: #000000;
+$white: #ffffff;
+$green: #63a914;
 body {
-	background-image: url("");
+	background-color: $black ;
 	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
@@ -44,7 +47,7 @@ img {
 }
 
 #box2 {
-	border: 2px solid green;
+	border: 2px solid $green;
 	width: 40%;
 	height: auto;
 	margin: 0 5%;
@@ -52,17 +55,8 @@ img {
 
 .text {
 	width: 100%;
-	
+	color: $white;
 	text-align: center;
 }
 
-@media screen and (max-width: 680px) {
-	.container {
-		display: block;
-		width: auto;
-	}
-
-	.container1 {
-		width: 90%;
-	}
-} 
+@import 'media';
