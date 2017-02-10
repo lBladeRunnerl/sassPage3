@@ -1,6 +1,6 @@
 $black: #000000;
 $white: #ffffff;
-$green: rgba(99, 169, 20, 0.3);
+$green: rgba(99, 169, 20, 0.15);
 $grey1: rgba(26, 26, 26, 1);
 body{
 	background-image: url('../images/background.jpg');
@@ -62,11 +62,15 @@ header {
 		}
 
 		.text {
+			font-family: 'Merriweather', serif;
+			letter-spacing: 1px;
+			line-height: 20px;
+			font-size: 14px;
 			position: relative;
 			top: 15px;
 			border-top: 1px solid $white;
 			width: 100%;
-			color: $white;
+			color: rgba(255, 255, 255, 0.76);
 			text-align: center;
 			padding: 2% 2% 0 2%;
 			box-sizing: border-box;
@@ -79,7 +83,7 @@ header {
 
 	.container1:hover {
 		background-image: linear-gradient(to bottom, transparent, $green );
-		
+		border-bottom: 1px solid $white;
 		border-radius: 7px;
 		
 	}
