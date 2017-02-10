@@ -3,10 +3,13 @@ $white: #ffffff;
 $green: #63a914;
 $grey1: rgba(26, 26, 26, 1);
 body{
-	background-color: $grey1 ;
-	
+	background-image: url('../images/background.jpg');
+	display: cover;
+	repeat:no-repeat;
 	margin: 0;
 	padding: 0;
+	width:100%;
+	height: 100%;
 
 }
 
