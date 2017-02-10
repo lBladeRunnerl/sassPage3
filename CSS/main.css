@@ -1,8 +1,32 @@
 body {
   background-color: #000000;
-  overflow-x: hidden;
   margin: 0;
   padding: 0; }
+
+header {
+  color: #ffffff;
+  border: 2px solid #63a914;
+  width: 80%;
+  margin: 0 10%; }
+  header h1 {
+    width: 100%;
+    text-align: center; }
+
+nav {
+  border: 2px solid #ffffff;
+  width: 80%;
+  margin: 0 10%; }
+  nav ul {
+    box-sizing: border-box;
+    width: 98%;
+    margin: 0 1%;
+    padding: 0;
+    text-align: center; }
+    nav ul li {
+      color: #ffffff;
+      list-style-type: none;
+      display: inline-flex;
+      padding: 10px 5%; }
 
 .container {
   width: auto;
@@ -33,9 +57,6 @@ body {
       box-sizing: border-box; }
 
 @media screen and (max-width: 680px) {
-  body {
-    overflow-x: hidden; }
-
   .container {
     display: block;
     width: auto; }

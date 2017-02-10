@@ -1,0 +1,22 @@
+
+nav {
+	border: 2px solid $white;
+	width: 80%;
+	margin: 0 10%;
+	
+	ul {
+		box-sizing: border-box;
+		width: 98%;
+		margin: 0 1%;
+		padding: 0;
+		text-align: center;
+
+		li {
+			color: $white;
+			list-style-type: none;
+			display: inline-flex;
+			padding: 10px 5%;
+
+		}
+	}
+}

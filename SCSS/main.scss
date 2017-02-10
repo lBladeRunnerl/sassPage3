@@ -3,11 +3,29 @@ $white: #ffffff;
 $green: #63a914;
 body{
 	background-color: $black ;
-	overflow-x: hidden;
+	
 	margin: 0;
 	padding: 0;
 
 }
+
+header {
+	color: $white;
+	border: 2px solid $green;
+	width: 80%;
+	margin: 0 10%;
+	
+	h1 {
+		width: 100%;
+		
+		text-align: center;
+
+	}
+	
+}
+
+@import 'navbar';
+
 
 .container {
 	width: auto;
