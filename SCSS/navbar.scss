@@ -1,12 +1,15 @@
 $white: #ffffff;
-$black: #000000;
+$black: rgba(0, 0, 0, 0.64);
+
 $grey1: rgba(26, 26, 26, 1);
+$greenGlow: 0 8px 16px 0 rgba(99, 169, 20, 0.2), 0 12px 40px 0 rgba(99, 169, 20, 0.19);
 nav {
 	border-top: 1px solid $white;
 	border-bottom: 1px solid $white;
 	border-radius: 5px;
 	width: 80%;
 	margin: 0 10%;
+	box-shadow: $greenGlow;
 	
 	ul {
 		box-sizing: border-box;
@@ -16,6 +19,7 @@ nav {
 		text-align: center;
 
 		li {
+			font-family: 'Oswald', sans-serif;
 			color: $white;
 			list-style-type: none;
 			display: inline-flex;
@@ -25,7 +29,7 @@ nav {
 
 		li:hover {
 			cursor: pointer;
-			background-image: linear-gradient(to bottom, $grey1, rgba(99, 169, 20, 0.5));
+			background-image: linear-gradient(to bottom, transparent, rgba(99, 169, 20, 0.5));
 			border-radius: 5px;
 			
 		}
