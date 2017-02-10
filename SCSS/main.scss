@@ -1,8 +1,9 @@
 $black: #000000;
 $white: #ffffff;
 $green: #63a914;
+$grey1: rgba(26, 26, 26, 1);
 body{
-	background-color: $black ;
+	background-color: $grey1 ;
 	
 	margin: 0;
 	padding: 0;
@@ -11,7 +12,6 @@ body{
 
 header {
 	color: $white;
-	border: 2px solid $green;
 	width: 80%;
 	margin: 0 10%;
 	
@@ -37,19 +37,20 @@ header {
 
 	.container1 {
 		display: block;
-		width: 94%;
-		margin: 3%;
+		width: 96%;
+		margin: 1%;
 		box-sizing: content-box;
-
+		padding:1%;
 		#box1 {
 			display: block;
-			width: 100%;
+			width: 96%;
 			height: auto;
-
+			padding: 2%;
 			
 			img {
 				width: 100%;
     			height: 100%; 
+    			border-radius: 5px;
 
 			}
 		}
@@ -64,6 +65,13 @@ header {
 			padding: 2%;
 			box-sizing: border-box;
 		}
+	}
+
+	.container1:hover {
+		background-image: linear-gradient(to bottom, $grey1, rgba(99, 169, 20, 0.3));
+		
+		border-radius: 5px;
+		
 	}
 }
 
