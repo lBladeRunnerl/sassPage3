@@ -1,10 +1,17 @@
 @media screen and (max-width: 680px) {
+	body {
+		overflow-x: hidden;
+		
+	}
+
 	.container {
 		display: block;
 		width: auto;
+		
 	}
 
 	.container1 {
-		width: 90%;
+		width: 100%;
+
 	}
 }
