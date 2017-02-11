@@ -1,7 +1,5 @@
-$black: #000000;
-$white: #ffffff;
-$green: rgba(99, 169, 20, 0.15);
-$grey1: rgba(26, 26, 26, 1);
+@import 'colors';
+
 body{
 	background-image: url('../images/background.jpg');
 	background-size: cover;
@@ -41,10 +39,10 @@ header {
 	.container1 {
 		display: block;
 		width: 96%;
-		margin: 1%;
+		margin: 10px 1%;
 		box-sizing: content-box;
 		padding:1% 1% 2% 1%;
-
+		border-bottom: 1px solid transparent;
 		#box1 {
 			display: block;
 			width: 96%;
@@ -76,6 +74,7 @@ header {
 			box-sizing: border-box;
 			background-image: linear-gradient(to bottom, $black, transparent);
 			border-radius: 7px;
+
 		}
 
 

@@ -1,21 +1,29 @@
+@import 'colors';
 
 @media screen and (max-width: 680px) {
 	
-	nav ul li {
-		box-sizing: border-box;
-		display: block;
-		width: 100%;
-		color: $green;
+	nav {
+		@import 'miniNav';
+		ul {
+	 		li {
+				box-sizing: border-box;
+				display: block;
+				width: 96%;
+				color: $white;
+				padding: 10px;
+				margin: 0 auto;
+			}
+		}
 	}
 
 	.container {
 		display: block;
 		width: auto;
-		
+		.container1 {
+			
+
+		}	
 	}
 
-	.container1 {
-		width: 100%;
-
-	}
+	
 }
