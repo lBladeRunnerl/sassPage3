@@ -1,5 +1,13 @@
+
 @media screen and (max-width: 680px) {
 	
+	nav ul li {
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
+		color: $green;
+	}
+
 	.container {
 		display: block;
 		width: auto;
