@@ -1,25 +1,31 @@
 @import 'colors';
+.transform-active {
+	background-color: $green;
+}
 #handle {
 	border: 1px solid $white;
 	border-radius: 7px;
 	width: 50px;
-	height: 40px;
-	margin: 5px auto 5px 8px ;
+	height: 35px;
+	margin: 6px auto 0px 8px ;
 	cursor: pointer;
-
+	
 	#icon {
+		transition: 0.5s;
 		#stripe {
-			background-color: $white;
+			background-color: $blue;
 			border-radius: 10px;
 			height: 5px;
 			width: 36px;
 			margin: 6px auto;
+
 		}
+		&:hover{
+			transform: rotate(90deg);
+		}
+		
 	}
 
-	&:hover {
-	box-shadow: $greenGlow;
-	background-color: $green;
-	}
+	
 }
 

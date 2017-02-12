@@ -1,8 +1,11 @@
 @import 'colors';
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 705px) {
 	
 	nav {
+		
+		padding: 0;
+
 		@import 'miniNav';
 		ul {
 			max-height: 0;
@@ -10,9 +13,10 @@
 				box-sizing: border-box;
 				display: block;
 				width: 96%;
-				color: $white;
+				color: $black;
 				padding: 10px;
 				margin: 0 auto;
+
 			}
 		}
 	}
