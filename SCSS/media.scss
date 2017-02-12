@@ -5,6 +5,7 @@
 	nav {
 		@import 'miniNav';
 		ul {
+			max-height: 0;
 	 		li {
 				box-sizing: border-box;
 				display: block;
@@ -14,6 +15,10 @@
 				margin: 0 auto;
 			}
 		}
+	}
+
+	.open {
+		max-height: 20em;
 	}
 
 	.container {

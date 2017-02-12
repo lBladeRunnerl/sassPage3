@@ -28,6 +28,7 @@ nav {
     width: auto;
     margin: 0;
     padding: 0;
+    transition: max-height 0.5s;
     text-align: center;
     overflow: hidden; }
     nav ul li {
@@ -94,7 +95,7 @@ nav {
     border-radius: 7px;
     width: 50px;
     height: 40px;
-    margin: 5px auto;
+    margin: 5px auto 5px 8px;
     cursor: pointer; }
     nav #handle #icon #stripe {
       background-color: #ffffff;
@@ -105,13 +106,18 @@ nav {
     nav #handle:hover {
       box-shadow: 0 8px 16px 0 rgba(99, 169, 20, 0.2), 0 12px 40px 0 rgba(99, 169, 20, 0.19);
       background-color: rgba(99, 169, 20, 0.15); }
-  nav ul li {
-    box-sizing: border-box;
-    display: block;
-    width: 96%;
-    color: #ffffff;
-    padding: 10px;
-    margin: 0 auto; }
+  nav ul {
+    max-height: 0; }
+    nav ul li {
+      box-sizing: border-box;
+      display: block;
+      width: 96%;
+      color: #ffffff;
+      padding: 10px;
+      margin: 0 auto; }
+
+  .open {
+    max-height: 20em; }
 
   .container {
     display: block;
