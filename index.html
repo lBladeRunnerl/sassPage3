@@ -19,6 +19,19 @@
 </head>
 <body>
   <div class="wrapper">
+
+  	<div id="parentBlock">
+  		<div id="childBlock">
+  			<div id="plank1"></div>	
+  			<div id="plank2"></div>
+  			<div id="plank3"></div>
+  		</div>
+  		<div class="sideIcons">
+  		<a href=""><img src="images/chevyLogo.png"></a>
+  		<a href=""><img src="images/jagLogo.png"></a>
+  		</div>
+  	</div>
+
 	<header>
 		<h1>Classic & Future <br> Cars</h1>
 	</header>
@@ -39,7 +52,7 @@
 			<li>Contact</li>
 		</ul>
 	</nav>
- 
+ 	
 	<div class="container">
 	
 		<div class="container1">
@@ -106,7 +119,11 @@
 	});
 </script>
 
-
+<script>
+	jQuery('#parentBlock').click(function(){
+   jQuery(this).toggleClass('active');
+});
+</script>
 
 </body>
 </html>
