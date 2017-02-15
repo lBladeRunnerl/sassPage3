@@ -1,3 +1,3 @@
 # sassPage3
 
-Simple responsive page with sass implementation
+Simple responsive page based on flex layout with sass structure.
