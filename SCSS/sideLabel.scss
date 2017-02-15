@@ -1,5 +1,5 @@
 @import 'colors';
-
+@import 'mixins';
 #parentBlock {
 		position: fixed;
 		background-color: $grey1;
@@ -16,6 +16,7 @@
 			margin: 10px 0px;
 			display: block;
 			position: relative;
+			float: left;
 			#plank1 {
 				@include plank;
 
@@ -42,27 +43,25 @@
 		}
 
 		.sideIcon {
-
-			position: relative;
-			bottom: 5px;
-			left: 60px;
-			height: 0px;
-			width: 200px;
+			display: block;
+			height: 0;
+			width: 0;		
 			
 			transition: opacity 0.5s;
 			
 			flex-direction: row;
 			a {
-				
+				float: left;
+				display: block;
 				opacity: 0;
-				height: 40px;
+				height: 0;
+				width: 0;
 				
 				img {
-					margin: 5px 0;
-					transform: scale(0.7, 0.7);
-						
+					height: 0;
+				width: 0;
 					&:hover {
-						transform: scale(0.7, 0.7)
+						
 					}
 				}
 			}
@@ -72,6 +71,40 @@
 
 	
 
+
 	#parentBlock.active {
+			
 		width: 300px;	
+		.sideIcon {
+			
+			position: relative;
+			top: 15px;
+			display: flex;
+
+			height: 0;
+			width: 0;
+			a {	
+
+				float: none;
+				display: block;
+				transform: scale(0.8, 0.8);
+				transition: scale 0.5s;
+				opacity: 1;
+				height: 30px;
+				width: 60px;
+				img {
+					
+					height: auto;
+					width: auto;
+					
+					
+				}
+
+				&:hover {
+						transform: scale(1, 1);
+					}
+
+			}
+		}
+
 	}

@@ -12,7 +12,8 @@
   #parentBlock #childBlock {
     margin: 10px 0px;
     display: block;
-    position: relative; }
+    position: relative;
+    float: left; }
     #parentBlock #childBlock #plank1 {
       width: 40px;
       height: 4px;
@@ -39,24 +40,42 @@
   #parentBlock:hover > #childBlock > #plank3 {
     width: 30px; }
   #parentBlock .sideIcon {
-    position: relative;
-    bottom: 5px;
-    left: 60px;
-    height: 0px;
-    width: 200px;
+    display: block;
+    height: 0;
+    width: 0;
     transition: opacity 0.5s;
     flex-direction: row; }
     #parentBlock .sideIcon a {
+      float: left;
+      display: block;
       opacity: 0;
-      height: 40px; }
+      height: 0;
+      width: 0; }
       #parentBlock .sideIcon a img {
-        margin: 5px 0;
-        transform: scale(0.7, 0.7); }
-        #parentBlock .sideIcon a img:hover {
-          transform: scale(0.7, 0.7); }
+        height: 0;
+        width: 0; }
 
 #parentBlock.active {
   width: 300px; }
+  #parentBlock.active .sideIcon {
+    position: relative;
+    top: 15px;
+    display: flex;
+    height: 0;
+    width: 0; }
+    #parentBlock.active .sideIcon a {
+      float: none;
+      display: block;
+      transform: scale(0.8, 0.8);
+      transition: scale 0.5s;
+      opacity: 1;
+      height: 30px;
+      width: 60px; }
+      #parentBlock.active .sideIcon a img {
+        height: auto;
+        width: auto; }
+      #parentBlock.active .sideIcon a:hover {
+        transform: scale(1, 1); }
 
 nav {
   border-top: 1px solid #ffffff;
