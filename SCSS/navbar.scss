@@ -7,13 +7,13 @@ nav {
 	width: 80%;
 	margin: 0 10%;
 	box-shadow: $paperShadow;
-	padding: 5px 0;
+	
 	
 	
 	ul {
 		box-sizing: border-box;
 		width: auto;
-		margin: 0 ;
+		margin: 1%;
 		padding: 5px;
 		transition: max-height 1s;
 		text-align: center;
@@ -22,11 +22,13 @@ nav {
 
 		li {
 			font-family: 'Oswald', sans-serif;
+			
 			letter-spacing: 2px;
 			color: $black;
 			list-style-type: none;
 			display: inline-flex;
-			padding: 5px 5%;
+			padding: 1% 5%;
+			margin: 0 auto;
 			transition: 0.7s;
 		}
 

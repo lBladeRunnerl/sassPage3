@@ -1,0 +1,77 @@
+@import 'colors';
+
+#parentBlock {
+		position: fixed;
+		background-color: $grey1;
+		float: left;
+		height: 50px;
+		width: 60px;
+		margin: 10px 0;
+		transition: width 1s;
+		box-shadow: $paperShadow;
+		cursor: pointer;
+		z-index: 1;
+		
+		#childBlock {
+			margin: 10px 0px;
+			display: block;
+			position: relative;
+			#plank1 {
+				@include plank;
+
+			}
+
+			#plank2 {
+				@include plank;
+			}
+
+			#plank3 {
+				@include plank;
+			}
+		}
+
+		&:hover > #childBlock > #plank1 {
+			width:  20px;
+
+		}
+
+		
+
+		&:hover > #childBlock > #plank3 {
+			width:  30px;
+		}
+
+		.sideIcon {
+
+			position: relative;
+			bottom: 5px;
+			left: 60px;
+			height: 0px;
+			width: 200px;
+			
+			transition: opacity 0.5s;
+			
+			flex-direction: row;
+			a {
+				
+				opacity: 0;
+				height: 40px;
+				
+				img {
+					margin: 5px 0;
+					transform: scale(0.7, 0.7);
+						
+					&:hover {
+						transform: scale(0.7, 0.7)
+					}
+				}
+			}
+		}
+		
+	}
+
+	
+
+	#parentBlock.active {
+		width: 300px;	
+	}

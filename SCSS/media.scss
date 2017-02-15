@@ -1,35 +1,55 @@
 @import 'colors';
 
-@media screen and (max-width: 705px) {
-	
+@media  (max-width: 705px) {
+
+
+
 	nav {
+		.open {
+			font-family: 'Oswald', sans-serif;
+			letter-spacing: 2px;
+			color: $black;
+			text-align: center;
+			display: block;
+			
+			transition: 0.7s;
+			max-height: 20em;
+			
+		}
 		
 		padding: 0;
 
 		@import 'miniNav';
 		ul {
+			width: 96%;
+			margin: 0px auto;
 			max-height: 0;
+
 	 		li {
 				box-sizing: border-box;
-				display: block;
 				width: 96%;
 				color: $black;
 				padding: 10px;
 				margin: 0 auto;
+				
+
 
 			}
 		}
 	}
 
-	.open {
-		max-height: 20em;
-	}
+
 
 	.container {
-		display: block;
-		width: auto;
+		
+		flex-wrap: wrap;
+		.container1 {
+			flex-grow: 1;
 			
+
+		}
 	}
 
 	
+
 }

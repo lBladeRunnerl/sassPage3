@@ -1,92 +1,22 @@
 @import 'colors';
 @import 'mixins';
+@import 'sideLabel';
+@import 'navbar';
 body{
+	box-sizing: border-box;
 	background-color: white;
-	background-size: cover;
-	background-repeat:no-repeat;
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: 100%;
-	border-radius: 10px;
+	height: auto;
+	
 
 
-}
 
-.wrapper {
-	margin: 1%;
-	box-shadow: $paperShadow; 
-	border-radius: 10px;
-	#parentBlock {
-		position: fixed;
-		background-color: $grey1;
-		float: left;
-		height: 50px;
-		width: 60px;
-		margin: 10px 0;
-		transition: height 1s;
-		box-shadow: $paperShadow;
-		cursor: pointer;
-		z-index: 1;
-		
-		#childBlock {
-			margin: 15px 0px;
-			#plank1 {
-				@include plank;
-
-			}
-
-			#plank2 {
-				@include plank;
-			}
-
-			#plank3 {
-				@include plank;
-			}
-		}
-
-		&:hover > #childBlock > #plank1 {
-			width:  20px;
-
-		}
-
-		&:hover > #childBlock > #plank2 {
-			width:  35px;
-		}
-
-		&:hover > #childBlock > #plank3 {
-			width:  30px;
-		}
-
-		.sideIcons {
-
-			a {
-				transition: opacity 0.5s;
-				opacity: 0;
-				img {
-					margin: 5px 0;
-					transform: scale(0.7, 0.7);
-						
-					&:hover {
-						transform: scale(0.7, 0.7)
-					}
-				}
-			}
-		}
-		
-	}
-
-	#parentBlock:active {
-		@include sideIcons;
-		
-		
-	}
-
-	#parentBlock.active {
-		@include sideIcons;
-		
-	}
-
+ #wrapper {
+	margin: 2%;
+	border-radius: 7px;
+	box-shadow: $paperShadow;
 	
 
 
@@ -104,62 +34,31 @@ header {
 	
 }
 
-@import 'navbar';
+
 
 
 .container {
-	width: auto;
-	height: auto;
-	margin: 0;
-	padding: 0;
+	box-sizing: border-box;
+	
 	display: flex;
+	
+	
 	
 
 	.container1 {
-		display: block;
-		width: 96%;
-		margin: 10px 1%;
-		box-sizing: content-box;
-		padding:1% 1% 2% 1%;
-		border-bottom: 1px solid transparent;
+		
+		flex-basis: 50%;
+		
+		margin: 10px auto;
+		
+		padding:1% ;
+		
 		#box1 {
-			display: block;
-			width: 97%;
-			height: auto;
-			padding: 1.5% 1.5% 0.8% 1.5%;
-			border-radius: 7px;
-			box-shadow: $paperShadow;
-			transition: 0.5s;
-			background-color: $blue;
-			
-			img {
-				width: 100%;
-    			height: 100%; 
-    			border-radius: 7px;
-
-			}
-
-			
+			@include innerbox;					
 		}
 
 		#box2 {
-			display: block;
-			width: 97%;
-			height: auto;
-			padding: 1.5% 1.5% 0.8% 1.5%;
-			border-radius: 7px;
-			box-shadow: $paperShadow;
-			transition: 0.5s;
-			z-index: 1;
-			background-color: $blue;
-			img {
-				width: 100%;
-    			height: 100%; 
-    			border-radius: 7px;
-
-			}
-
-			
+			@include innerbox;
 		}
 
 		.text {
@@ -168,11 +67,12 @@ header {
 			line-height: 20px;
 			font-size: 14px;
 			position: relative;
-			top: 15px;
+			
 			width: 100%;
 			color: $black;
 			text-align: center;
-			padding: 2% 2% 0 2%;
+			margin: 5% 0;
+			padding: 2% 2% 2% 2%;
 			box-sizing: border-box;
 			border-radius: 7px;
 			box-shadow: $paperShadow;
@@ -196,9 +96,9 @@ header {
 
 	}
 
- }
 }
-
+}
+}
 @import 'media';
 
 
