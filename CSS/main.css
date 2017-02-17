@@ -1,19 +1,19 @@
 #parentBlock {
   position: fixed;
-  background-color: #1a1a1a;
+  background-color: rgba(26, 26, 26, 0.95);
   float: left;
   height: 50px;
   width: 60px;
   margin: 10px 0;
   transition: width 1s;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  cursor: pointer;
   z-index: 1; }
   #parentBlock #childBlock {
     margin: 10px 0px;
     display: block;
     position: relative;
-    float: left; }
+    float: left;
+    cursor: pointer; }
     #parentBlock #childBlock #plank1 {
       width: 40px;
       height: 4px;
@@ -46,6 +46,7 @@
     transition: opacity 0.5s;
     transition-delay: 0.5s; }
     #parentBlock .sideIcon a {
+      cursor: pointer;
       height: 0;
       width: 0; }
       #parentBlock .sideIcon a img {
@@ -185,8 +186,6 @@ body {
       display: block;
       transition: 0.7s;
       max-height: 20em; }
-    nav .transform-active {
-      background-color: #63a914; }
     nav #handle {
       border: 1px solid #ffffff;
       border-radius: 7px;
@@ -219,5 +218,8 @@ body {
     flex-wrap: wrap; }
     .container .container1 {
       flex-grow: 1; } }
+@media (max-width: 360px) {
+  #parentBlock {
+    margin-top: 60px; } }
 
 /*# sourceMappingURL=main.css.map */
