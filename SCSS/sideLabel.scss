@@ -12,6 +12,7 @@
 		cursor: pointer;
 		z-index: 1;
 		
+
 		#childBlock {
 			margin: 10px 0px;
 			display: block;
@@ -43,26 +44,26 @@
 		}
 
 		.sideIcon {
-			display: block;
+			
 			height: 0;
 			width: 0;		
-			
+			opacity: 0;
 			transition: opacity 0.5s;
+			transition-delay: 0.5s;
 			
-			flex-direction: row;
+			
 			a {
-				float: left;
-				display: block;
-				opacity: 0;
+				
+				
+				
+				
 				height: 0;
 				width: 0;
 				
 				img {
 					height: 0;
-				width: 0;
-					&:hover {
-						
-					}
+					width: 0;
+					
 				}
 			}
 		}
@@ -73,10 +74,10 @@
 
 
 	#parentBlock.active {
-			
-		width: 300px;	
+		
+		width: 250px;	
 		.sideIcon {
-			
+			opacity: 1;	
 			position: relative;
 			top: 15px;
 			display: flex;
@@ -85,11 +86,11 @@
 			width: 0;
 			a {	
 
-				float: none;
-				display: block;
+								
 				transform: scale(0.8, 0.8);
-				transition: scale 0.5s;
-				opacity: 1;
+				transition: all 0.5s;
+				
+
 				height: 30px;
 				width: 60px;
 				img {
@@ -108,3 +109,5 @@
 		}
 
 	}
+
+	

@@ -40,15 +40,12 @@
   #parentBlock:hover > #childBlock > #plank3 {
     width: 30px; }
   #parentBlock .sideIcon {
-    display: block;
     height: 0;
     width: 0;
+    opacity: 0;
     transition: opacity 0.5s;
-    flex-direction: row; }
+    transition-delay: 0.5s; }
     #parentBlock .sideIcon a {
-      float: left;
-      display: block;
-      opacity: 0;
       height: 0;
       width: 0; }
       #parentBlock .sideIcon a img {
@@ -56,19 +53,17 @@
         width: 0; }
 
 #parentBlock.active {
-  width: 300px; }
+  width: 250px; }
   #parentBlock.active .sideIcon {
+    opacity: 1;
     position: relative;
     top: 15px;
     display: flex;
     height: 0;
     width: 0; }
     #parentBlock.active .sideIcon a {
-      float: none;
-      display: block;
       transform: scale(0.8, 0.8);
-      transition: scale 0.5s;
-      opacity: 1;
+      transition: all 0.5s;
       height: 30px;
       width: 60px; }
       #parentBlock.active .sideIcon a img {
